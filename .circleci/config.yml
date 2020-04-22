@@ -7,7 +7,7 @@ jobs:
   build:
     branches:
       only:
-        - .circleci
+        - circleci-project-setup
     executor: android/android
         
     steps:
