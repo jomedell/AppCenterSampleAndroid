@@ -5,9 +5,14 @@ orbs:
 
 jobs:
   build:
+    branches:
+      only:
+        - .circleci
     executor: android/android
         
     steps:
       - checkout
       - run:
           command: ./gradlew build
+          
+  
