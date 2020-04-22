@@ -1,13 +1,13 @@
-version: 2
+version: 2.1
 
 orbs:
  android: circleci/android@0.2.0
 
 jobs:
   build:
-    branches:
-      only:
-        - circleci-project-setup
+    #branches:
+    #  only:
+    #    - circleci-project-setup
     executor: android/android
         
     steps:
